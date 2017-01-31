@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This is a title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+    <style>
+      /* Wrap code blocks instead of overflowing */
+      pre > code {
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>Dating profile generator</h1>
+
+      <p class="tagline">
+        Create your own dating profile, that you fully own! Simply enter your personal information below and the HTML for your profile will start writing itself automatically.
+      </p>
+
+      <h2>Personal</h2>
+
+      <div class="row">
+        <div class="six columns">
+          <label>First name</label>
+          <input data-name="firstname" type="text" class="u-full-width">
+        </div>
+        <div class="six columns">
+          <label>Last name</label>
+          <input data-name="lastname" type="text" class="u-full-width">
+        </div>
+      </div>
+      <label>Briefly describe yourself</label>
+      <textarea data-name="descript" class="u-full-width"></textarea>
+      <h2>Contact</h2>
+
+      <div class="row">
+        <div class="six columns">
+          <label>Email</label>
+          <input data-name="email" type="email" class="u-full-width">
+        </div>
+        <div class="six columns">
+          <label>Phone</label>
+          <input data-name="phone" type="tel" class="u-full-width">
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <h2>Preview</h2>
+          <div id="htmlDisplay">
+                  </div>
+        </div>
+        <div class="six columns">
+          <h2>Generated HTML</h2>
+          <pre><code id="codeDisplay">
+          </code></pre>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
