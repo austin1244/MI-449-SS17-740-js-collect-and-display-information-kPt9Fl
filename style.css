@@ -1,0 +1,7 @@
+/* Wrap code blocks instead of overflowing */
+pre > code {
+  white-space: pre-wrap;
+}
+#codeDisplay{
+  overflow-x: scroll;
+}
